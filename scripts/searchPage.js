@@ -14,7 +14,7 @@ const generateCard = (searchTerm) => {
     searchTerm = searchTerm.trim().toLowerCase();
 
     // Fetch data from the JSON file
-    fetch('./data/booksNames.json')
+    fetch('../data/booksNames.json')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('books-content');
