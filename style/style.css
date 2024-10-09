@@ -14,7 +14,6 @@ a {
 
 .nav-wrapper {
     background: #242222;
-
 }
 
 .nav-container {
@@ -310,6 +309,7 @@ body {
         font-weight: bold;
     }
 
+    
 }
 
 @media (max-width: 420px) {
@@ -354,6 +354,9 @@ body {
         width: 120px;
     }
 
+    .container-content {
+        width: 100%;
+    }
     .books-item {
         height: 30vh;
         width: 20vh;
