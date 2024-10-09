@@ -34,6 +34,20 @@ a {
     column-gap: 10%;
 }
 
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 20px;
+    padding: 3px;
+    border-radius: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: none;
+}
 .container-wrapper {
     display: flex;
 
@@ -51,7 +65,7 @@ a {
 
 .second-nav-container li {
     font-size: 1.2rem;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 .searchInput {
@@ -212,27 +226,52 @@ body {
         width: 120px;
     }
 
+    .books-item {
+        height: 33vh;
+        width: 28vh;
+
+    }
+
+    .img-container {
+        height: 33vh;
+        width: 28vh;
+    }
+    .books-item img {
+        height: 33vh;
+        width: 28vh;
+    }
 
 }
 
 @media (max-width: 500px) {
 
-    
-    .second-nav-container {
-        background: #242222;
-        color: #fff;
-        width: 500px;
+    .container-wrapper{
+        flex-direction: column;
+    }
+
+    .toggle{
+        display:block;
         display: flex;
+        align-items: center;
         justify-content: center;
-        padding-top: 80px;
+    }
+    .second-nav-container {
+        display: none;
+        padding-top: 0;
+        width: 100%;
 
     }
 
     .second-nav-container li {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-bottom: 15px;
     }
-
+    
+    .nav-container {
+        padding: 20px 20px;
+        font-size: 1.2rem;
+    }
+    
     .nav-container {
         padding: 20px 20px;
         font-size: 1.2rem;
@@ -275,22 +314,29 @@ body {
 
 @media (max-width: 420px) {
 
-    
-    .second-nav-container {
-        background: #242222;
-        color: #fff;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        padding-top: 80px;
+    .container-wrapper{
+        flex-direction: column;
+    }
 
+    .toggle{
+        display:block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .second-nav-container {
+        padding-top: 0;
+        width: 100%;
+        display: none;
     }
 
     .second-nav-container li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding-bottom: 15px;
     }
-
+    
     .nav-container {
         padding: 20px 20px;
         font-size: 1.2rem;
@@ -309,19 +355,19 @@ body {
     }
 
     .books-item {
-        height: 35vh;
-        width: 25vh;
+        height: 30vh;
+        width: 20vh;
 
     }
 
     .img-container {
-        height: 35vh;
-        width: 25vh;
+        height: 30vh;
+        width: 20vh;
     }
 
     .books-item img {
-        height: 35vh;
-        width: 25vh;
+        height: 30vh;
+        width: 20vh;
     }
 
     .overlay-text {
