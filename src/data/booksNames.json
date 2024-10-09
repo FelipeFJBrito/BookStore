@@ -1,0 +1,30 @@
+{
+    "contacts langue et culture francaises": [
+        {
+            "title": "Contacts langue et culture francaises",
+            "image": "../assets/languageBooks/Contacts-langue-et-culture-francaises.png",
+            "link": "../books/languagesBooks/Contacts-langue-et-culture-francaises.pdf"
+        }
+    ],
+    "comptia network+ guide to networks 9th edition": [
+        {
+            "title": "CompTIA Network+ Guide to Networks 9th edition",
+            "image": "../assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png",
+            "link": "../books/comps/comptia-network+-guide-to-networks-9th-edition.pdf"
+        }
+    ],
+    "software engineering a practitioner's approach": [
+        {
+            "title": "Software Engineering A Practitioner's Approach",
+            "image": "../assets/compsBooks/software-Engineering-a-Practitioners-approach.png",
+            "link": "../books/comps/software-Engineering-a-Practitioners-approach.pdf"
+        }
+    ],
+    "web development & design foundations with html5 10th ed": [
+        {
+            "title": "Web Development & Design Foundations with HTML5 10TH ED",
+            "image": "../assets/compsBooks/web-development-&-design-foundations-with-html5-10th-ed.png",
+            "link": "../books/comps/web-development-&-design-foundations-with-html5-10th-ed.pdf"
+        }
+    ]
+}
