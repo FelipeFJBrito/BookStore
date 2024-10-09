@@ -4,83 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/books.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <title>BookStore</title>
 </head>
 
 <body>
     <div class="nav-wrapper">
         <div class="nav-container">
-            <a href="./index.html" rel = 'noopener noreferrer'>
+            <a href="./index.html" rel='noopener noreferrer'>
                 <h2>BookStore</h2>
             </a>
             <ul>
                 <li><input class="searchInput" type="text"></li>
-                <li><button class="searchButton">Search</button></li>
+                <li><button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button></li>
             </ul>
         </div>
     </div>
 
-    <div class="content-wrapper">
-        <h2>
-            Recent Updates
-        </h2>
-        <div class="container-content">
-            <div class="books-item">
-                <a href="./books/languagesBooks/Contacts-langue-et-culture-francaises.pdf" target = '_blank' rel = 'noopener noreferrer'>
-                    <div class="img-container">
-                        <img src="./assets/languageBooks/Contacts-langue-et-culture-francaises.png" alt="Contacts-langue-et-culture-francaises">
-                        <div class="overlay-text">Contacts langue et culture francaises</div>
-                    </div>
-                </a>
-            </div>
-            <div class="books-item">
-                <a href="./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf" target = '_blank' rel = 'noopener noreferrer'>
-                    <div class="img-container">
-                        <img src="./assets/compsBooks/software-Engineering-a-Practitioners-approach.png" alt="Contacts-langue-et-culture-francaises">
-                        <div class="overlay-text">Software Engineering A Practitioner's Approach</div>
-                    </div>
-                </a>
-            </div>
-            <div class="books-item">
-                <a href="./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf" target = '_blank' rel = 'noopener noreferrer'>
-                    <div class="img-container">
-                        <img src="./assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png" alt="Contacts-langue-et-culture-francaises">
-                        <div class="overlay-text">CompTIA Network+ Guide to Networks 9th edition</div>
-                    </div>
-                </a>
-            </div>
-            <div class="books-item">
-                <a href="./books/comps/web-development-&-design-foundations-with-html5-10th-ed.pdf" target = '_blank' rel = 'noopener noreferrer'>
-                    <div class="img-container">
-                        <img src="./assets/compsBooks/web-development-&-design-foundations-with-html5-10th-ed.png" alt="Contacts-langue-et-culture-francaises">
-                        <div class="overlay-text">Web Development & Design Foundations with HTML5 10TH ED</div>
-                    </div>
-                </a>
-            </div>
-            <div class="books-item">
-                <a href="./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf" target = '_blank' rel = 'noopener noreferrer'>
-                    <div class="img-container">
-                        <img src="./assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png" alt="Contacts-langue-et-culture-francaises">
-                        <div class="overlay-text">CompTIA Network+ Guide to Networks 9th edition</div>
-                    </div>
-                </a>
-            </div>
-            <div class="books-item">
-                <a href="./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf" target = '_blank' rel = 'noopener noreferrer'>
-                    <div class="img-container">
-                        <img src="./assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png" alt="Contacts-langue-et-culture-francaises">
-                        <div class="overlay-text">CompTIA Network+ Guide to Networks 9th edition</div>
-                    </div>
-                </a>
+    <div class="container-wrapper">
+        <div class="second-nav-container">
+            <ul class="second-nav-content">
+                <li class="comps" id="comps"><a href="books.html" onclick="setCategory('comps')">Computer Science</a></li>
+                <li class="languages" id="languages"><a href="books.html" onclick="setCategory('languages')">Languages</a></li>
+                <li class="math" id="math"><a href="books.html" onclick="setCategory('math')">Math</a></li>
+
+                <!-- Add more categories here as needed -->
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <h2>
+                Recent Updates
+            </h2>
+            <div class="container-content">
+                <div class="books-item">
+                    <a href="./books/languagesBooks/Contacts-langue-et-culture-francaises.pdf" target='_blank'
+                        rel='noopener noreferrer'>
+                        <div class="img-container">
+                            <img src="./assets/languageBooks/Contacts-langue-et-culture-francaises.png"
+                                alt="Contacts-langue-et-culture-francaises">
+                            <div class="overlay-text">Contacts langue et culture francaises</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="books-item">
+                    <a href="./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf" target='_blank'
+                        rel='noopener noreferrer'>
+                        <div class="img-container">
+                            <img src="./assets/compsBooks/software-Engineering-a-Practitioners-approach.png"
+                                alt="Contacts-langue-et-culture-francaises">
+                            <div class="overlay-text">Software Engineering A Practitioner's Approach</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="books-item">
+                    <a href="./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf" target='_blank'
+                        rel='noopener noreferrer'>
+                        <div class="img-container">
+                            <img src="./assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png"
+                                alt="Contacts-langue-et-culture-francaises">
+                            <div class="overlay-text">CompTIA Network+ Guide to Networks 9th edition</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="books-item">
+                    <a href="./books/comps/web-development-&-design-foundations-with-html5-10th-ed.pdf" target='_blank'
+                        rel='noopener noreferrer'>
+                        <div class="img-container">
+                            <img src="./assets/compsBooks/web-development-&-design-foundations-with-html5-10th-ed.png"
+                                alt="Contacts-langue-et-culture-francaises">
+                            <div class="overlay-text">Web Development & Design Foundations with HTML5 10TH ED</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="books-item">
+                    <a href="./books/comps/introduction-to-java-programming-10th-edition.pdf" target='_blank'
+                        rel='noopener noreferrer'>
+                        <div class="img-container">
+                            <img src="./assets/compsBooks/introduction-to-java-programming-10th-edition.png"
+                                alt="Contacts-langue-et-culture-francaises">
+                            <div class="overlay-text">Introduction to Java Programming 10th Edition</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="books-item">
+                    <a href="./books/comps/html-&-css-design-and-build-websites-javaScript-&-jquery.pdf" target='_blank'
+                        rel='noopener noreferrer'>
+                        <div class="img-container">
+                            <img src="./assets/compsBooks/html-&-css-design-and-build-websites-javaScript-&-jquery.png"
+                                alt="Contacts-langue-et-culture-francaises">
+                            <div class="overlay-text">HTML & CSS design and build websites JavaScript & JQuery</div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="footer-wrapper">
         <div class="footer-content">
-            <a href="./index.html" rel = 'noopener noreferrer'>
+            <a href="./index.html" rel='noopener noreferrer'>
                 <h2>BookStore</h2>
             </a>
         </div>

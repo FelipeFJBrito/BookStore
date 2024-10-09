@@ -1,4 +1,11 @@
 {
+    "a votre tour intermediate french": [
+        {
+            "title": "A votre tour! Intermediate French",
+            "image": "./assets/languageBooks/a-votre-tour!-intermediate-french.png",
+            "link": "./books/languagesBooks/a-votre-tour!-intermediate-french.pdf"
+        }
+    ],
     "contacts langue et culture francaises": [
         {
             "title": "Contacts langue et culture francaises",
@@ -11,6 +18,20 @@
             "title": "CompTIA Network+ Guide to Networks 9th edition",
             "image": "./assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png",
             "link": "./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf"
+        }
+    ],
+    "introduction to java programming 10th edition": [
+        {
+            "title": "Introduction to Java Programming 10th Edition",
+            "image": "./assets/compsBooks/introduction-to-java-programming-10th-edition.png",
+            "link": "./books/comps/introduction-to-java-programming-10th-edition.pdf"
+        }
+    ],
+    "html & css design and build websites javaScript & jquery": [
+        {
+            "title": "HTML & CSS design and build websites JavaScript & JQuery",
+            "image": "./assets/compsBooks/html-&-css-design-and-build-websites-javaScript-&-jquery.png",
+            "link": "./books/comps/html-&-css-design-and-build-websites-javaScript-&-jquery.pdf"
         }
     ],
     "software engineering a practitioner's approach": [

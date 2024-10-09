@@ -1,6 +1,10 @@
 let searchTab = document.querySelector(".searchInput");
 let searchButton = document.querySelector(".searchButton");
 
+function setCategory(category) {
+    localStorage.setItem('selectedCategory', category);
+  }
+
 searchButton.addEventListener('click', () => {
     let bookName = searchTab.value.trim().toLowerCase();
     if (bookName) {
@@ -8,3 +12,5 @@ searchButton.addEventListener('click', () => {
         window.location.href = `searchPage.html?book=${encodeURIComponent(bookName)}`;
     }
 });
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/books.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <title>BookStore</title>
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <div class="nav-wrapper">
+        <div class="nav-container">
+            <a href="./index.html" rel = 'noopener noreferrer'>
+                <h2>BookStore</h2>
+            </a>
+            <ul>
+                <li><input class="searchInput" type="text"></li>
+                <li><button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Second navbar for categories -->
+    <div class="container-wrapper">
+        <div class="second-nav-container">
+            <ul class="second-nav-content">
+                <li class="comps" id="comps"><a href="books.html" onclick="setCategory('comps')">Computer Science</a></li>
+                <li class="languages" id="languages"><a href="books.html" onclick="setCategory('languages')">Languages</a></li>
+                <li class="math" id="math"><a href="books.html" onclick="setCategory('math')">Math</a></li>
+
+                <!-- Add more categories here as needed -->
+            </ul>
+        </div>
+
+        <!-- Books content -->
+        <div class="content-wrapper">
+            <div id="books-content" class="container-content-generated"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <a href="./index.html" rel = 'noopener noreferrer'>
+                <h2>BookStore</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

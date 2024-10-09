@@ -1,0 +1,42 @@
+{
+    "comps": [
+        {
+            "title": "Software Engineering A Practitioner's Approach",
+            "image": "./assets/compsBooks/software-Engineering-a-Practitioners-approach.png",
+            "link": "./books/comps/software-Engineering-a-Practitioners-approach.pdf"
+        },
+        {
+            "title": "Web Development & Design Foundations with HTML5 10TH ED",
+            "image": "./assets/compsBooks/web-development-&-design-foundations-with-html5-10th-ed.png",
+            "link": "./books/comps/web-development-&-design-foundations-with-html5-10th-ed.pdf"
+        },
+        {
+            "title": "HTML & CSS design and build websites JavaScript & JQuery",
+            "image": "./assets/compsBooks/html-&-css-design-and-build-websites-javaScript-&-jquery.png",
+            "link": "./books/comps/html-&-css-design-and-build-websites-javaScript-&-jquery.pdf"
+        },
+        {
+            "title": "CompTIA Network+ Guide to Networks 9th edition",
+            "image": "./assets/compsBooks/comptia-network+-guide-to-networks-9th-edition.png",
+            "link": "./books/comps/comptia-network+-guide-to-networks-9th-edition.pdf"
+        },
+        {
+            "title": "Introduction to Java Programming 10th Edition",
+            "image": "./assets/compsBooks/introduction-to-java-programming-10th-edition.png",
+            "link": "./books/comps/introduction-to-java-programming-10th-edition.pdf"
+        }
+    ],
+    "languages": [
+        {
+            "title": "Contacts langue et culture francaises",
+            "image": "./assets/languageBooks/Contacts-langue-et-culture-francaises.png",
+            "link": "./books/languagesBooks/Contacts-langue-et-culture-francaises.pdf"
+        },
+        {
+            "title": "A votre tour! Intermediate French",
+            "image": "./assets/languageBooks/a-votre-tour!-intermediate-french.png",
+            "link": "./books/languagesBooks/a-votre-tour!-intermediate-french.pdf"
+        }
+    ]
+
+}
